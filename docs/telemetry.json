@@ -1,6 +1,20 @@
 {
-  "generated": "2026-05-28T09:11:42.107Z",
+  "generated": "2026-05-28T09:15:14.470Z",
   "sessions": [
+    {
+      "ts": "2026-05-28T09:15:14.470Z",
+      "type": "general",
+      "isFailure": false,
+      "commits": 1,
+      "filesChanged": 3,
+      "artifacts": [],
+      "effort": "max",
+      "telemetry": {
+        "toolCalls": 11,
+        "p50": 51,
+        "p95": 37216
+      }
+    },
     {
       "ts": "2026-05-28T09:11:42.107Z",
       "type": "architecture",

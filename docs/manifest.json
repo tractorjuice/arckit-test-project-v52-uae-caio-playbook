@@ -1,5 +1,5 @@
 {
-  "generated": "2026-05-28T09:09:26.445Z",
+  "generated": "2026-05-28T09:24:59.530Z",
   "repository": {
     "name": "arckit-test-project-v52-uae-caio-playbook"
   },
@@ -1054,7 +1054,28 @@
     "NHSDTAC": "Compliance",
     "NHSMDR": "Compliance"
   },
-  "projects": [],
+  "globalPolicies": [
+    {
+      "path": "projects/000-global/policies/README.md",
+      "title": "README.md",
+      "type": "md"
+    }
+  ],
+  "projects": [
+    {
+      "id": "001-agentic-ai-portfolio",
+      "name": "Agentic Ai Portfolio",
+      "documents": [
+        {
+          "path": "projects/001-agentic-ai-portfolio/ARC-001-AICH-v1.0.md",
+          "title": "UAE AI Charter Compliance Assessment",
+          "category": "Compliance",
+          "documentId": "ARC-001-AICH-v1.0",
+          "extension": ".md"
+        }
+      ]
+    }
+  ],
   "dependencyGraph": {
     "nodes": {
       "ARC-000-PRIN-v1.0": {
@@ -1079,12 +1100,41 @@
           "orphan": true,
           "ageDays": null
         }
+      },
+      "ARC-001-AICH-v1.0": {
+        "type": "AICH",
+        "project": "001-agentic-ai-portfolio",
+        "path": "projects/001-agentic-ai-portfolio/ARC-001-AICH-v1.0.md",
+        "title": "UAE AI Charter Compliance Assessment",
+        "status": "",
+        "severity": "HIGH",
+        "createdDate": null,
+        "lastModified": null,
+        "version": "1.0",
+        "owner": "",
+        "classification": "",
+        "vendor": null,
+        "subdir": null,
+        "controlFields": {},
+        "reqIds": [],
+        "health": {
+          "stale": false,
+          "draft": false,
+          "orphan": false,
+          "ageDays": null
+        }
       }
     },
-    "edges": []
+    "edges": [
+      {
+        "from": "ARC-001-AICH-v1.0",
+        "to": "ARC-000-PRIN",
+        "type": "references"
+      }
+    ]
   },
   "projectHealth": {
-    "baseline": "2026-05-28T09:09:26.447Z",
+    "baseline": "2026-05-28T09:24:59.553Z",
     "staleThresholdDays": 90,
     "essentialTypes": [
       {
@@ -1150,6 +1200,144 @@
       "ATRS",
       "JSP936"
     ],
-    "projects": []
+    "projects": [
+      {
+        "project": "001-agentic-ai-portfolio",
+        "projectId": "001",
+        "artifactCount": 1,
+        "edgeCount": 1,
+        "density": 1,
+        "coverage": {
+          "essentialPresent": [],
+          "essentialMissing": [
+            {
+              "type": "REQ",
+              "command": "/arckit:requirements",
+              "label": "Requirements",
+              "tier": 1
+            },
+            {
+              "type": "STKE",
+              "command": "/arckit:stakeholders",
+              "label": "Stakeholder Analysis",
+              "tier": 1
+            },
+            {
+              "type": "RISK",
+              "command": "/arckit:risk",
+              "label": "Risk Register",
+              "tier": 1
+            },
+            {
+              "type": "SOBC",
+              "command": "/arckit:sobc",
+              "label": "Strategic Outline Business Case",
+              "tier": 2
+            },
+            {
+              "type": "ADR",
+              "command": "/arckit:adr",
+              "label": "Architecture Decision Record",
+              "tier": 3
+            },
+            {
+              "type": "HLDR",
+              "command": "/arckit:hld-review",
+              "label": "High-Level Design Review",
+              "tier": 3
+            },
+            {
+              "type": "TRAC",
+              "command": "/arckit:traceability",
+              "label": "Traceability Matrix",
+              "tier": 4
+            },
+            {
+              "type": "CONF",
+              "command": "/arckit:conformance",
+              "label": "Conformance Assessment",
+              "tier": 4
+            }
+          ],
+          "essentialPct": 0,
+          "presentTypes": [
+            "AICH"
+          ],
+          "presentByCategory": {
+            "Compliance": 1
+          }
+        },
+        "compliance": {
+          "presentHigh": [],
+          "missingHigh": [
+            "TCOP",
+            "SECD",
+            "SECD-MOD",
+            "DPIA",
+            "SVCASS",
+            "RISK",
+            "TRAC",
+            "CONF",
+            "PRIN-COMP",
+            "AIPB",
+            "ATRS",
+            "JSP936"
+          ],
+          "pct": 0,
+          "total": 12
+        },
+        "health": {
+          "stale": 0,
+          "draft": 0,
+          "orphan": 0
+        },
+        "contextualSuggestions": [
+          {
+            "command": "/arckit:dpia",
+            "type": "DPIA",
+            "trigger": "processing personal data"
+          },
+          {
+            "command": "/arckit:secure",
+            "type": "SECD",
+            "trigger": "security-sensitive system"
+          },
+          {
+            "command": "/arckit:tcop",
+            "type": "TCOP",
+            "trigger": "UK Gov Service Standard"
+          },
+          {
+            "command": "/arckit:data-model",
+            "type": "DATA",
+            "trigger": "DR-* requirements present"
+          }
+        ],
+        "hasGlobalPrin": true,
+        "recommendations": [
+          {
+            "command": "/arckit:requirements",
+            "label": "Requirements",
+            "type": "REQ",
+            "tier": 1,
+            "reason": "Tier 1 essential missing"
+          },
+          {
+            "command": "/arckit:stakeholders",
+            "label": "Stakeholder Analysis",
+            "type": "STKE",
+            "tier": 1,
+            "reason": "Tier 1 essential missing"
+          },
+          {
+            "command": "/arckit:risk",
+            "label": "Risk Register",
+            "type": "RISK",
+            "tier": 1,
+            "reason": "Tier 1 essential missing"
+          }
+        ]
+      }
+    ]
   }
 }

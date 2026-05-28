@@ -10,9 +10,23 @@ ArcKit maintains a traceability chain: Stakeholders → Goals → Requirements (
 - [Dashboard and document viewer](./index.html): Interactive web UI with KPI dashboard, category charts, governance checklist, sidebar navigation, and Mermaid diagram rendering.
 - [Manifest](./manifest.json): Machine-readable JSON index of every artifact, guide, and project in this repository.
 
+## Project status
+
+- 001-agentic-ai-portfolio: 0% essential coverage · 0% compliance readiness · next: /arckit:requirements
+
 ## Global artifacts
 
 - [Architecture Principles](https://raw.githubusercontent.com/tractorjuice/arckit-test-project-v52-uae-caio-playbook/main/projects/000-global/ARC-000-PRIN-v1.0.md): Architecture · `ARC-000-PRIN-v1.0`.
+
+## Global policies
+
+- [README.md](https://raw.githubusercontent.com/tractorjuice/arckit-test-project-v52-uae-caio-playbook/main/projects/000-global/policies/README.md): MD.
+
+## Projects
+
+### Agentic Ai Portfolio
+
+- [UAE AI Charter Compliance Assessment](https://raw.githubusercontent.com/tractorjuice/arckit-test-project-v52-uae-caio-playbook/main/projects/001-agentic-ai-portfolio/ARC-001-AICH-v1.0.md): Compliance · `ARC-001-AICH-v1.0`.
 
 ## ArcKit guides
 
