@@ -10,5 +10,9 @@
   "enabledPlugins": {
     "arckit@arc-kit": true,
     "arckit-uae@arc-kit": true
+  },
+  "statusLine": {
+    "type": "command",
+    "command": "bash $CLAUDE_PROJECT_DIR/.claude/statusline.sh"
   }
 }
