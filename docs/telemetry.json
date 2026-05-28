@@ -1,6 +1,29 @@
 {
-  "generated": "2026-05-28T09:15:14.470Z",
+  "generated": "2026-05-28T09:26:00.353Z",
   "sessions": [
+    {
+      "ts": "2026-05-28T09:26:00.353Z",
+      "type": "compliance",
+      "isFailure": false,
+      "commits": 2,
+      "filesChanged": 8,
+      "artifacts": [
+        {
+          "project": "001",
+          "categories": {
+            "Compliance": [
+              "UAE AI Charter Compliance Assessment"
+            ]
+          }
+        }
+      ],
+      "effort": "max",
+      "telemetry": {
+        "toolCalls": 9,
+        "p50": 1686,
+        "p95": 3707
+      }
+    },
     {
       "ts": "2026-05-28T09:15:14.470Z",
       "type": "general",
