@@ -1,5 +1,5 @@
 {
-  "generated": "2026-05-28T09:39:36.324Z",
+  "generated": "2026-05-28T09:55:00.008Z",
   "repository": {
     "name": "arckit-test-project-v52-uae-caio-playbook"
   },
@@ -1081,6 +1081,13 @@
           "extension": ".md"
         },
         {
+          "path": "projects/001-agentic-ai-portfolio/ARC-001-RISK-v1.0.md",
+          "title": "Risk Register",
+          "category": "Governance",
+          "documentId": "ARC-001-RISK-v1.0",
+          "extension": ".md"
+        },
+        {
           "path": "projects/001-agentic-ai-portfolio/ARC-001-STKE-v1.0.md",
           "title": "Stakeholder Analysis",
           "category": "Discovery",
@@ -1252,6 +1259,75 @@
           "ageDays": null
         }
       },
+      "ARC-001-RISK-v1.0": {
+        "type": "RISK",
+        "project": "001-agentic-ai-portfolio",
+        "path": "projects/001-agentic-ai-portfolio/ARC-001-RISK-v1.0.md",
+        "title": "Risk Register: Agentic AI Portfolio",
+        "status": "",
+        "severity": "HIGH",
+        "createdDate": null,
+        "lastModified": null,
+        "version": "1.0",
+        "owner": "",
+        "classification": "",
+        "vendor": null,
+        "subdir": null,
+        "controlFields": {
+          "TOTAL": "**328** / 500",
+          "Tolerate": "2",
+          "Treat": "22",
+          "Transfer": "1",
+          "Terminate": "0"
+        },
+        "reqIds": [
+          "BR-008",
+          "BR-001",
+          "BR-003",
+          "FR-015",
+          "BR-006",
+          "BR-009",
+          "FR-008",
+          "FR-019",
+          "INT-007",
+          "NFR-M-001",
+          "FR-011",
+          "FR-018",
+          "FR-003",
+          "FR-012",
+          "BR-004",
+          "NFR-C-001",
+          "NFR-C-004",
+          "DR-006",
+          "DR-007",
+          "NFR-SEC-003",
+          "BR-002",
+          "BR-007",
+          "NFR-A-002",
+          "BR-010",
+          "FR-010",
+          "NFR-U-001",
+          "FR-005",
+          "INT-008",
+          "BR-005",
+          "NFR-C-005",
+          "FR-009",
+          "NFR-SEC-007",
+          "NFR-SEC-005",
+          "NFR-SEC-006",
+          "NFR-A-004",
+          "FR-017",
+          "NFR-I-003",
+          "INT-001",
+          "INT-006"
+        ],
+        "health": {
+          "stale": false,
+          "draft": false,
+          "orphan": false,
+          "ageDays": null
+        }
+      },
       "ARC-001-STKE-v1.0": {
         "type": "STKE",
         "project": "001-agentic-ai-portfolio",
@@ -1298,6 +1374,26 @@
         "type": "references"
       },
       {
+        "from": "ARC-001-RISK-v1.0",
+        "to": "ARC-001-AICH",
+        "type": "references"
+      },
+      {
+        "from": "ARC-001-RISK-v1.0",
+        "to": "ARC-000-PRIN",
+        "type": "references"
+      },
+      {
+        "from": "ARC-001-RISK-v1.0",
+        "to": "ARC-001-STKE",
+        "type": "references"
+      },
+      {
+        "from": "ARC-001-RISK-v1.0",
+        "to": "ARC-001-REQ",
+        "type": "references"
+      },
+      {
         "from": "ARC-001-STKE-v1.0",
         "to": "ARC-000-PRIN",
         "type": "references"
@@ -1310,7 +1406,7 @@
     ]
   },
   "projectHealth": {
-    "baseline": "2026-05-28T09:39:36.330Z",
+    "baseline": "2026-05-28T09:55:00.021Z",
     "staleThresholdDays": 90,
     "essentialTypes": [
       {
@@ -1380,21 +1476,16 @@
       {
         "project": "001-agentic-ai-portfolio",
         "projectId": "001",
-        "artifactCount": 3,
-        "edgeCount": 6,
-        "density": 2,
+        "artifactCount": 4,
+        "edgeCount": 10,
+        "density": 2.5,
         "coverage": {
           "essentialPresent": [
             "REQ",
-            "STKE"
+            "STKE",
+            "RISK"
           ],
           "essentialMissing": [
-            {
-              "type": "RISK",
-              "command": "/arckit:risk",
-              "label": "Risk Register",
-              "tier": 1
-            },
             {
               "type": "SOBC",
               "command": "/arckit:sobc",
@@ -1426,26 +1517,29 @@
               "tier": 4
             }
           ],
-          "essentialPct": 25,
+          "essentialPct": 38,
           "presentTypes": [
             "AICH",
             "REQ",
+            "RISK",
             "STKE"
           ],
           "presentByCategory": {
             "Compliance": 1,
-            "Discovery": 2
+            "Discovery": 2,
+            "Governance": 1
           }
         },
         "compliance": {
-          "presentHigh": [],
+          "presentHigh": [
+            "RISK"
+          ],
           "missingHigh": [
             "TCOP",
             "SECD",
             "SECD-MOD",
             "DPIA",
             "SVCASS",
-            "RISK",
             "TRAC",
             "CONF",
             "PRIN-COMP",
@@ -1453,7 +1547,7 @@
             "ATRS",
             "JSP936"
           ],
-          "pct": 0,
+          "pct": 8,
           "total": 12
         },
         "health": {
@@ -1486,13 +1580,6 @@
         "hasGlobalPrin": true,
         "recommendations": [
           {
-            "command": "/arckit:risk",
-            "label": "Risk Register",
-            "type": "RISK",
-            "tier": 1,
-            "reason": "Tier 1 essential missing"
-          },
-          {
             "command": "/arckit:sobc",
             "label": "Strategic Outline Business Case",
             "type": "SOBC",
@@ -1503,6 +1590,13 @@
             "command": "/arckit:adr",
             "label": "Architecture Decision Record",
             "type": "ADR",
+            "tier": 3,
+            "reason": "Tier 3 essential missing"
+          },
+          {
+            "command": "/arckit:hld-review",
+            "label": "High-Level Design Review",
+            "type": "HLDR",
             "tier": 3,
             "reason": "Tier 3 essential missing"
           }
