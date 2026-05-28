@@ -1,0 +1,74 @@
+{
+  "generated": "2026-05-28T09:02:06.793Z",
+  "sessions": [
+    {
+      "ts": "2026-05-28T09:02:06.793Z",
+      "type": "failure (server_error)",
+      "isFailure": true,
+      "commits": 0,
+      "filesChanged": 0,
+      "artifacts": [],
+      "effort": "high"
+    },
+    {
+      "ts": "2026-05-28T08:52:54.825Z",
+      "type": "failure (server_error)",
+      "isFailure": true,
+      "commits": 0,
+      "filesChanged": 0,
+      "artifacts": [],
+      "effort": "high"
+    },
+    {
+      "ts": "2026-05-28T08:45:06.485Z",
+      "type": "general",
+      "isFailure": false,
+      "commits": 1,
+      "filesChanged": 1,
+      "artifacts": [],
+      "effort": "max",
+      "telemetry": {
+        "toolCalls": 14,
+        "p50": 1,
+        "p95": 3475
+      }
+    },
+    {
+      "ts": "2026-05-28T08:34:08.540Z",
+      "type": "general",
+      "isFailure": false,
+      "commits": 1,
+      "filesChanged": 1,
+      "artifacts": [],
+      "effort": "max",
+      "telemetry": {
+        "toolCalls": 1,
+        "p50": 2162,
+        "p95": 2162
+      }
+    },
+    {
+      "ts": "2026-05-28T08:33:02.466Z",
+      "type": "general",
+      "isFailure": false,
+      "commits": 1,
+      "filesChanged": 4,
+      "artifacts": [],
+      "effort": "max",
+      "telemetry": {
+        "toolCalls": 16,
+        "p50": 2123,
+        "p95": 6009
+      }
+    },
+    {
+      "ts": "2026-05-28T08:28:20.878Z",
+      "type": "general",
+      "isFailure": false,
+      "commits": 1,
+      "filesChanged": 11,
+      "artifacts": [],
+      "effort": "max"
+    }
+  ]
+}
