@@ -9,7 +9,7 @@
   },
   "enabledPlugins": {
     "arckit@arckit-claude": true,
-    "arckit-uae@arc-kit": true
+    "arckit-uae@arckit-claude": true
   },
   "statusLine": {
     "type": "command",
